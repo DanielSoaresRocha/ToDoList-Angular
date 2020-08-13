@@ -7,17 +7,16 @@ import { TarefaService, Tarefa } from '../shared'
   styleUrls: ['./listar-tarefas.component.css']
 })
 export class ListarTarefasComponent implements OnInit {
-  tarefas: Tarefa[]
-
+  tarefas: Tarefa[];
 
   constructor(private tarefaService: TarefaService) { }
 
   ngOnInit (): void {
-    this.tarefas = this.tarefaService.listarTodos()
+    this.tarefas = this.tarefaService.listarTodos();
   }
 
   listarTodos (): Tarefa[] {
-    return this.tarefaService.listarTodos()
+    return this.tarefaService.listarTodos();
   }
 
 
